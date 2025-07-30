@@ -36,7 +36,7 @@ A modern, feature-rich Chrome extension for real-time text analysis with a beaut
 ## 🚀 Installation
 
 ### Option 1: Install from Chrome Web Store
-1. Visit the [Chrome Web Store](#) (coming soon)
+1. Visit the [Chrome Web Store] (coming soon)
 2. Click "Add to Chrome"
 3. Confirm the installation
 
