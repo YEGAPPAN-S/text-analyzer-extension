@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=700, height=auto">
+    <title>Yega's Text Analyzer Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-icon">📝</div>
+        <h1>Yega's Text Analyzer Pro</h1>
+    </div>
+
+    <div class="container">
+        <div class="editor-section">
+            <div class="toolbar">
+                <button class="btn" id="clearBtn">Clear</button>
+                <button class="btn" id="copyBtn">Copy Stats</button>
+                <button class="btn" id="darkModeBtn">Dark Mode</button>
+            </div>
+            <textarea id="editor"
+                placeholder="✨ Start typing your text here... 
+
+Try pasting an article, essay, or any text content to see detailed analytics including reading time estimates and text complexity metrics."></textarea>
+        </div>
+
+        <div class="stats-section">
+            <div class="stats-title">
+                📊 Analytics
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Words</div>
+                <div class="stat-value" id="wordCount">0</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="wordProgress"></div>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Characters</div>
+                <div class="stat-value" id="charCountSpaces">0</div>
+                <div class="word-cloud-hint">With spaces</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Characters</div>
+                <div class="stat-value" id="charCountNoSpaces">0</div>
+                <div class="word-cloud-hint">Without spaces</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Sentences</div>
+                <div class="stat-value" id="sentenceCount">0</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-label">Paragraphs</div>
+                <div class="stat-value" id="paragraphCount">0</div>
+            </div>
+
+            <div class="stat-item reading-time">
+                <div class="stat-label">📚 Reading Time</div>
+                <div class="stat-value" id="readingTime">0m 0s</div>
+                <div class="word-cloud-hint" style="color: rgba(255,255,255,0.7);">~200 WPM average</div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
